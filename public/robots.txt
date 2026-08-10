@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sachinmishra.design/sitemap.xml
