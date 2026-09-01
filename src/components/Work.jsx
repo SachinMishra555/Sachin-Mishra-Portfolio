@@ -11,7 +11,7 @@ const PROJECTS = [
     reverse: false,
     image: '/omarieden-cover.png',
     imageBg: 'linear-gradient(160deg,#3a1a10 0%,#1c0c08 100%)',
-    figmaLink: 'https://www.figma.com/design/gxtEdjzCNBJWQW6vAHp8Wa/Omariedean-Website?node-id=0-1&t=EeSdyneoJ7k2ggSH-1',
+    figmaLink: 'https://www.figma.com/design/xvbVjvWc2pbznI2lSl6p6S/Omarieden-_-Website-Design.?node-id=1-3&t=xFwfvmBhLsXra7Ew-1',
   },
  {
   id: 'nimbus-mobile',
