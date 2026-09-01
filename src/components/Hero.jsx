@@ -16,7 +16,7 @@ export default function Hero() {
                 Product Designer
               </span>
               <span className="inline-block right-0 top-[-10px] absolute px-3 py-1 text-[11px] md:text-[18px] font-medium text-white/70 bg-black/40 border border-white/12 rounded-[12px] md:rounded-[18px] whitespace-nowrap rotate-badge animate-badgePop opacity-0">
-                AI &amp; SaaS Products
+                UX/UI
               </span>
             </div>
 
