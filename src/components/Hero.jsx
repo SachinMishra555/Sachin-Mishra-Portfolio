@@ -13,7 +13,7 @@ export default function Hero() {
             {/* Role + badge */}
             <div className="flex items-start gap-3 mb-4 flex-wrap relative">
               <span className="font-accent italic text-accent text-[32px] md:text-[68px] leading-none font-bold">
-                UX/UI Designer
+                Product,UX/UI Designer
               </span>
               <span className="inline-block right-0 top-[-10px] absolute px-3 py-1 text-[11px] md:text-[18px] font-medium text-white/70 bg-black/40 border border-white/12 rounded-[12px] md:rounded-[18px] whitespace-nowrap rotate-badge animate-badgePop opacity-0">
                 AI &amp; SaaS Products
@@ -70,11 +70,11 @@ export default function Hero() {
               </div>
 
               {/* Portrait */}
-              <div className="aspect-[3/4] rounded-[20px] md:rounded-[24px] overflow-hidden bg-elevated2 hover:scale-[1.015] transition-transform duration-500">
+              <div className="aspect-[728/952] rounded-[20px] md:rounded-[24px] overflow-hidden bg-elevated2 hover:scale-[1.015] transition-transform duration-500">
                 <img
                   src="/sachin-portrait.png"
                   alt="Sachin Mishra"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-contain"
                   fetchpriority="high"
                   decoding="async"
                 />
