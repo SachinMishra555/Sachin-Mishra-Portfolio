@@ -16,7 +16,7 @@ export default function Hero() {
                 Product Designer
               </span>
               <span className="inline-block right-0 top-[-10px] absolute px-3 py-1 text-[11px] md:text-[18px] font-medium text-white/70 bg-black/40 border border-white/12 rounded-[12px] md:rounded-[18px] whitespace-nowrap rotate-badge animate-badgePop opacity-0">
-                UX/UI
+                & UX/UI Designer
               </span>
             </div>
 
@@ -74,7 +74,7 @@ export default function Hero() {
                 <img
                   src="/sachin-portrait.png"
                   alt="Sachin Mishra"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover block"
                   fetchpriority="high"
                   decoding="async"
                 />
