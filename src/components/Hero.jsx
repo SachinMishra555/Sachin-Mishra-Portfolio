@@ -74,7 +74,7 @@ export default function Hero() {
                 <img
                   src="/sachin-portrait.png"
                   alt="Sachin Mishra"
-                  className="w-full h-full object-cover block"
+                  className="block w-full h-full object-cover rounded-[24px]"
                   fetchpriority="high"
                   decoding="async"
                 />
