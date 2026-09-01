@@ -48,12 +48,12 @@ function ProjectCard({ project }) {
         style={{ background: project.imageBg }}
       >
         <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          decoding="async"
-          onError={(e) => { e.currentTarget.style.display = 'none' }}
+        src={project.image}
+        alt={project.title}
+        className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+        decoding="async"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
         />
       </div>
 
