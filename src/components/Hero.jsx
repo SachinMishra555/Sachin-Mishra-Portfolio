@@ -36,7 +36,7 @@ export default function Hero() {
                 Explore Projects
               </a>
               <a
-                href="/sachin-mishra-product-designer-cv-2026.pdf"
+                href="/sachinmishra.pdf"
                 download
                 className="inline-flex items-center justify-center px-5 py-2.5 md:px-7 md:py-3.5 rounded-[11px] bg-transparent text-white text-[14px] md:text-[18px] font-medium border border-white/35 underline underline-offset-2 hover:border-white/70 hover:bg-white/6 hover:-translate-y-0.5 transition-all duration-200"
               >
