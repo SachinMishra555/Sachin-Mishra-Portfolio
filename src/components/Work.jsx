@@ -47,14 +47,14 @@ function ProjectCard({ project }) {
         className={`relative md:rounded-xl overflow-hidden min-h-[200px] md:min-h-[420px] ${project.reverse ? 'md:order-2' : 'md:order-1'}`}
         style={{ background: project.imageBg }}
       >
-        <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
-        loading="lazy"
-        decoding="async"
-        onError={(e) => { e.currentTarget.style.display = 'none' }}
-        />
+      <img
+  src={project.image}
+  alt={project.title}
+  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+  loading="lazy"
+  decoding="async"
+  onError={(e) => { e.currentTarget.style.display = 'none' }}
+/>
       </div>
 
       {/* Content */}
