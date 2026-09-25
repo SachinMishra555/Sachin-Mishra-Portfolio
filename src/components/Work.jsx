@@ -63,15 +63,18 @@ function ProjectCard({ project }) {
         className={`relative md:rounded-xl overflow-hidden min-h-[200px] md:min-h-[420px] ${project.reverse ? 'md:order-2' : 'md:order-1'}`}
         style={{ background: project.imageBg }}
       >
-    {project.video ? (
+  {project.video ? (
   <video
     src={project.video}
-    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
     autoPlay
-    muted
     loop
+    muted
     playsInline
-    preload="metadata"
+    preload="auto"
+    className="absolute inset-0 w-full h-full object-cover"
+    onError={(e) => {
+      console.error('Video failed to load:', project.video, e)
+    }}
   />
 ) : (
   <img
@@ -80,7 +83,9 @@ function ProjectCard({ project }) {
     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
     loading="lazy"
     decoding="async"
-    onError={(e) => { e.currentTarget.style.display = 'none' }}
+    onError={(e) => {
+      e.currentTarget.style.display = 'none'
+    }}
   />
 )}
       </div>
