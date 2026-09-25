@@ -1,6 +1,22 @@
 import { ArrowRight } from 'lucide-react'
 
 const PROJECTS = [
+ {
+  id: 'quick-commerce',
+  title: 'Quick Commerce Checkout Flow',
+  subtitle: 'Fast & Frictionless Shopping Experience',
+  description: 'How might we make quick-commerce shopping faster, simpler, and more intuitive for everyday users?',
+  role: 'Product Designer | UX/UI',
+  tags: ['Quick Commerce', 'iOS UX', 'Interaction Design', 'Checkout Flow', 'UI Design'],
+  reverse: false,
+
+  // Your animated cover
+  video: '/quick-commerce-cover.mp4',
+
+  imageBg: 'linear-gradient(160deg,#171717 0%,#0b0b0b 100%)',
+
+  figmaLink: 'YOUR_FIGMA_LINK_HERE',
+},
   {
     id: 'omarieden',
     title: 'Omarieden',
@@ -8,7 +24,7 @@ const PROJECTS = [
     description: 'How might we create a premium omnichannel shopping experience for modern luxury consumers in Saudi Arabia?',
     role: 'Lead UX/UI Designer',
     tags: ['Design System', 'Developer Handoff', 'RTL/LTR', 'Responsive Design', 'UX Research'],
-    reverse: false,
+    reverse: true,
     image: '/omarieden-cover.png',
     imageBg: 'linear-gradient(160deg,#3a1a10 0%,#1c0c08 100%)',
     figmaLink: 'https://www.figma.com/design/xvbVjvWc2pbznI2lSl6p6S/Omarieden-_-Website-Design.?node-id=1-3&t=xFwfvmBhLsXra7Ew-1',
@@ -20,7 +36,7 @@ const PROJECTS = [
   description: 'How might we simplify the shipping experience by making package creation, pricing, and specialized shipment handling more intuitive for users?',
   role: 'Product Designer | UX Strategy',
   tags: ['Logistics Tech', 'UX Strategy', 'Interaction Design', 'Apple Guidelines', 'UI Design'],
-  reverse: true,
+  reverse: false,
   image: '/Nimbus-cover.png',
   imageBg: '#10100C',
   figmaLink: 'https://www.figma.com/design/g4YGAG0SkiL80YjJ1PlUV2/Nimbus-Mobile-App?node-id=33-1207&t=SoZNn6S6SUwyF7ky-1',
@@ -32,7 +48,7 @@ const PROJECTS = [
     description: 'How might we help sales representatives improve conversations and team productivity through real-time AI assistance?',
     role: 'Product Designer',
     tags: ['AI SaaS', 'Data Visualization', 'Enterprise Platform', 'Complex Workflows', 'UX Research'],
-    reverse: false,
+    reverse: true,
     image: '/salescoach-cover.png',
     imageBg: 'linear-gradient(160deg,#0d1117 0%,#161b22 100%)',
     figmaLink: 'https://www.figma.com/design/B3jmnqFIUbfYluNND3UXfi/Sales-Coach-Portfolio-File?node-id=0-1&t=0CyR5EjUHy24p5bt-1',
@@ -47,14 +63,26 @@ function ProjectCard({ project }) {
         className={`relative md:rounded-xl overflow-hidden min-h-[200px] md:min-h-[420px] ${project.reverse ? 'md:order-2' : 'md:order-1'}`}
         style={{ background: project.imageBg }}
       >
-    <img
-  src={project.image}
-  alt={project.title}
-  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-  loading="lazy"
-  decoding="async"
-  onError={(e) => { e.currentTarget.style.display = 'none' }}
-/>
+    {project.video ? (
+  <video
+    src={project.video}
+    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="metadata"
+  />
+) : (
+  <img
+    src={project.image}
+    alt={project.title}
+    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+    loading="lazy"
+    decoding="async"
+    onError={(e) => { e.currentTarget.style.display = 'none' }}
+  />
+)}
       </div>
 
       {/* Content */}
