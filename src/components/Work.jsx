@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react'
 const PROJECTS = [
  {
   id: 'quick-commerce',
-  title: 'Quick Commerce Checkout Flow',
+  title: 'Quick-comm. Checkout',
   subtitle: 'Fast & Frictionless Shopping Experience',
   description: 'How might we make quick-commerce shopping faster, simpler, and more intuitive for everyday users?',
   role: 'Product Designer | UX/UI',
@@ -15,7 +15,7 @@ const PROJECTS = [
 
   imageBg: 'linear-gradient(160deg,#171717 0%,#0b0b0b 100%)',
 
-  figmaLink: 'YOUR_FIGMA_LINK_HERE',
+  figmaLink: 'https://www.figma.com/design/dmrmqZ6XM4CdeY8qZEub9j/Mobile-App--Developer-Handoff--?node-id=169-2788&t=g0fQZOERUoMO3vEd-1',
 },
   {
     id: 'omarieden',
