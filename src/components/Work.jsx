@@ -51,7 +51,7 @@ const PROJECTS = [
     reverse: true,
     image: '/salescoach-cover.png',
     imageBg: 'linear-gradient(160deg,#0d1117 0%,#161b22 100%)',
-    figmaLink: 'https://www.figma.com/design/B3jmnqFIUbfYluNND3UXfi/Sales-Coach-Portfolio-File?node-id=0-1&t=0CyR5EjUHy24p5bt-1',
+    figmaLink: 'https://www.behance.net/gallery/257142097/AI-Powered-SalesCoach',
   },
 ]
 
