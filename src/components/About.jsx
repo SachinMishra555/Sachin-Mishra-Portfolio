@@ -8,14 +8,16 @@ export default function About() {
             {/* ── Left: Text ── */}
             <div>
               <h2 className="font-heading font-bold text-[22px] md:text-[44px] leading-tight tracking-tight text-white mb-4 md:mb-5">
-                Designing is how I think. Building ia how i prove it.
+                Designing is how I think. Building is how i prove it.
               </h2>
               <p className="text-white/60 text-[13px] md:text-[20px] leading-[1.8] mb-3 md:mb-4">
-                For the past 3+ years, I've been designing digital products that
-                balance business goals with real human experiences. From AI-powered
-                platforms and enterprise dashboards to student-focused applications,
-                I enjoy transforming complex workflows into interfaces that feel
-                simple, intuitive, and meaningful.
+                I started my career in graphic design,
+                learning how visuals communicate ideas and 
+                shape the way people perceive things.
+                But over time, I became more interested in
+                what happens beyond how something looks,
+                how people use a product, where they get stuck, 
+                and what makes an experience feel effortless.
               </p>
               <p className="text-white/60 text-[13px] md:text-[20px] leading-[1.8]">
                 Beyond design, I'm someone who loves exploring creativity in
