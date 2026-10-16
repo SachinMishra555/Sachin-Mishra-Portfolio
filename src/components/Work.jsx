@@ -29,18 +29,6 @@ const PROJECTS = [
 
   figmaLink: 'https://www.figma.com/design/dmrmqZ6XM4CdeY8qZEub9j/Mobile-App--Developer-Handoff--?node-id=169-2788&t=g0fQZOERUoMO3vEd-1',
 },
-  {
-    id: 'omarieden',
-    title: 'Omarieden',
-    subtitle: 'Luxury Fashion & Lifestyle Retail Platform',
-    description: 'How might we create a premium omnichannel shopping experience for modern luxury consumers in Saudi Arabia?',
-    role: 'Lead UX/UI Designer',
-    tags: ['Design System', 'Developer Handoff', 'RTL/LTR', 'Responsive Design', 'UX Research'],
-    reverse: true,
-    image: '/omarieden-cover.png',
-    imageBg: 'linear-gradient(160deg,#3a1a10 0%,#1c0c08 100%)',
-    figmaLink: 'https://www.figma.com/design/xvbVjvWc2pbznI2lSl6p6S/Omarieden-_-Website-Design.?node-id=1-3&t=xFwfvmBhLsXra7Ew-1',
-  },
  {
   id: 'nimbus-mobile',
   title: 'Nimbus Mobile App',
@@ -53,6 +41,18 @@ const PROJECTS = [
   imageBg: '#10100C',
   figmaLink: 'https://www.figma.com/design/g4YGAG0SkiL80YjJ1PlUV2/Nimbus-Mobile-App?node-id=33-1207&t=SoZNn6S6SUwyF7ky-1',
    },
+  {
+    id: 'omarieden',
+    title: 'Omarieden',
+    subtitle: 'Luxury Fashion & Lifestyle Retail Platform',
+    description: 'How might we create a premium omnichannel shopping experience for modern luxury consumers in Saudi Arabia?',
+    role: 'Lead UX/UI Designer',
+    tags: ['Design System', 'Developer Handoff', 'RTL/LTR', 'Responsive Design', 'UX Research'],
+    reverse: true,
+    image: '/omarieden-cover.png',
+    imageBg: 'linear-gradient(160deg,#3a1a10 0%,#1c0c08 100%)',
+    figmaLink: 'https://www.figma.com/design/xvbVjvWc2pbznI2lSl6p6S/Omarieden-_-Website-Design.?node-id=1-3&t=xFwfvmBhLsXra7Ew-1',
+  },
 ]
 
 function ProjectCard({ project }) {
