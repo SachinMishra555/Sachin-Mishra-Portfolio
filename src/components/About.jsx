@@ -8,7 +8,7 @@ export default function About() {
             {/* ── Left: Text ── */}
             <div>
               <h2 className="font-heading font-bold text-[22px] md:text-[44px] leading-tight tracking-tight text-white mb-4 md:mb-5">
-                I design experiences that feel inevitable.
+                Designing is how I think. Building ia how i prove it.
               </h2>
               <p className="text-white/60 text-[13px] md:text-[20px] leading-[1.8] mb-3 md:mb-4">
                 For the past 3+ years, I've been designing digital products that
