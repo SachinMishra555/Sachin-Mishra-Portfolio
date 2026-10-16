@@ -2,6 +2,18 @@ import { ArrowRight } from 'lucide-react'
 
 const PROJECTS = [
  {
+    id: 'salescoach',
+    title: 'SalesCoach',
+    subtitle: 'AI-Powered Sales Performance',
+    description: 'How might we help sales representatives improve conversations and team productivity through real-time AI assistance?',
+    role: 'Product Designer',
+    tags: ['AI SaaS', 'Data Visualization', 'Enterprise Platform', 'Complex Workflows', 'UX Research'],
+    reverse: true,
+    image: '/salescoach-cover.png',
+    imageBg: 'linear-gradient(160deg,#0d1117 0%,#161b22 100%)',
+    figmaLink: 'https://www.behance.net/gallery/257142097/AI-Powered-SalesCoach',
+  },
+ {
   id: 'quick-commerce',
   title: 'Quick-comm. Checkout',
   subtitle: 'Fast & Frictionless Shopping Experience',
@@ -41,18 +53,6 @@ const PROJECTS = [
   imageBg: '#10100C',
   figmaLink: 'https://www.figma.com/design/g4YGAG0SkiL80YjJ1PlUV2/Nimbus-Mobile-App?node-id=33-1207&t=SoZNn6S6SUwyF7ky-1',
    },
-  {
-    id: 'salescoach',
-    title: 'SalesCoach',
-    subtitle: 'AI-Powered Sales Performance',
-    description: 'How might we help sales representatives improve conversations and team productivity through real-time AI assistance?',
-    role: 'Product Designer',
-    tags: ['AI SaaS', 'Data Visualization', 'Enterprise Platform', 'Complex Workflows', 'UX Research'],
-    reverse: true,
-    image: '/salescoach-cover.png',
-    imageBg: 'linear-gradient(160deg,#0d1117 0%,#161b22 100%)',
-    figmaLink: 'https://www.behance.net/gallery/257142097/AI-Powered-SalesCoach',
-  },
 ]
 
 function ProjectCard({ project }) {
