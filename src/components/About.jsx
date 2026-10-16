@@ -4,6 +4,24 @@ export default function About() {
   const journeyRef = useRef(null);
   const [activeJob, setActiveJob] = useState(0);
 
+  const jobs = [
+    {
+      company: "Master’s Union",
+      role: "Product Designer",
+      date: "Oct 2025 — Present",
+    },
+    {
+      company: "Skyview Smart Solutions",
+      role: "UX/UI Designer",
+      date: "Apr 2024 — Oct 2025",
+    },
+    {
+      company: "JB Daruka Papers Ltd.",
+      role: "Graphic Designer",
+      date: "Nov 2021 — Nov 2022",
+    },
+  ];
+
   useEffect(() => {
     const container = journeyRef.current;
 
@@ -61,24 +79,6 @@ export default function About() {
     };
   }, []);
 
-  const jobs = [
-    {
-      company: "Master’s Union",
-      role: "Product Designer",
-      date: "Oct 2025 — Present",
-    },
-    {
-      company: "Skyview Smart Solutions",
-      role: "UX/UI Designer",
-      date: "Apr 2024 — Oct 2025",
-    },
-    {
-      company: "JB Daruka Papers Ltd.",
-      role: "Graphic Designer",
-      date: "Nov 2021 — Nov 2022",
-    },
-  ];
-
   return (
     <section id="about" className="px-3 pt-8 pb-0">
       <div className="max-w-[1240px] mx-auto">
@@ -124,7 +124,7 @@ export default function About() {
             <div className="flex w-full flex-col gap-5 md:gap-6">
               {/* Original Floating Image Collage */}
               <div className="relative h-[240px] md:h-[410px]">
-                {/* Workspace — top left */}
+                {/* Workspace */}
                 <div className="absolute top-0 left-0 w-[60%] h-[54%] animate-floatY hover:scale-105 transition-transform duration-300 z-10">
                   <img
                     src="/about-first.png"
@@ -135,7 +135,7 @@ export default function About() {
                   />
                 </div>
 
-                {/* Portrait — top right */}
+                {/* Portrait */}
                 <div className="absolute top-0 right-0 w-[35%] h-[76%] animate-floatY2 hover:scale-105 transition-transform duration-300 z-20">
                   <img
                     src="/about-second.png"
@@ -146,7 +146,7 @@ export default function About() {
                   />
                 </div>
 
-                {/* Detail — bottom left */}
+                {/* Detail */}
                 <div className="absolute bottom-0 left-[25%] w-[35%] h-[43%] animate-floatY3 hover:scale-105 transition-transform duration-300 z-10">
                   <img
                     src="/about-third.png"
@@ -158,7 +158,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Career Journey — Free-standing Timeline */}
+              {/* Career Journey */}
               <div ref={journeyRef} className="w-full py-6 md:py-8">
                 <div className="mb-8 md:mb-10">
                   <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-accent mb-3">
@@ -170,10 +170,10 @@ export default function About() {
                   </h3>
                 </div>
 
+                {/* Timeline */}
                 <div className="relative">
-                  {/* Background timeline line */}
-                  <div className="absolute left-[31%] md:left-[29%] top-2 bottom-2 w-px bg-white/10">
-                    {/* Yellow progress line */}
+                  {/* Vertical track aligned to the center column */}
+                  <div className="absolute left-[34%] md:left-[32%] top-2 bottom-2 w-px bg-white/15">
                     <div
                       className="w-full bg-accent transition-all duration-500 ease-out"
                       style={{
@@ -190,38 +190,43 @@ export default function About() {
                         <div
                           key={job.company}
                           data-index={index}
-                          className={`journey-item grid grid-cols-[31%_1fr] md:grid-cols-[29%_1fr] gap-4 md:gap-5 transition-opacity duration-500 ${
-                            isActive ? "opacity-100" : "opacity-40"
+                          className={`journey-item grid grid-cols-[34%_1fr] md:grid-cols-[32%_1fr] gap-0 transition-opacity duration-500 ${
+                            isActive ? "opacity-100" : "opacity-65"
                           }`}
                         >
-                          {/* Date */}
+                          {/* Date column */}
                           <p
-                            className={`text-right text-[10px] md:text-sm leading-relaxed pt-0.5 transition-colors duration-500 ${
-                              isActive ? "text-white/80" : "text-white/50"
+                            className={`pr-3 text-right text-[10px] md:text-sm leading-relaxed pt-0.5 transition-colors duration-500 ${
+                              isActive ? "text-white/90" : "text-white/55"
                             }`}
                           >
                             {job.date}
                           </p>
 
-                          {/* Timeline dot + Job details */}
-                          <div className="relative pl-6 md:pl-7">
+                          {/* Company and role column */}
+                          <div className="relative pl-8 md:pl-10 min-w-0">
+                            {/* Timeline dot */}
                             <span
                               className={`absolute left-[-4px] top-1 h-[9px] w-[9px] rounded-full transition-all duration-500 ${
                                 isActive
                                   ? "bg-accent scale-125 shadow-[0_0_12px_rgba(255,204,0,0.8)]"
-                                  : "bg-white/30"
+                                  : "bg-white/35"
                               }`}
                             />
 
                             <h4
                               className={`text-sm md:text-lg font-semibold leading-snug transition-colors duration-500 ${
-                                isActive ? "text-white" : "text-white/80"
+                                isActive ? "text-white" : "text-white/75"
                               }`}
                             >
                               {job.company}
                             </h4>
 
-                            <p className="mt-1 text-xs md:text-sm text-white/55">
+                            <p
+                              className={`mt-1 text-xs md:text-sm transition-colors duration-500 ${
+                                isActive ? "text-white/65" : "text-white/50"
+                              }`}
+                            >
                               {job.role}
                             </p>
 
@@ -245,11 +250,8 @@ export default function About() {
             </div>
             {/* End Right Column */}
           </div>
-          {/* End Grid */}
         </div>
-        {/* End Card */}
       </div>
-      {/* End Container */}
     </section>
   );
 }
