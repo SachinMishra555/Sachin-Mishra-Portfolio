@@ -18,8 +18,6 @@ export default function About() {
                 what happens beyond how something looks,
                 how people use a product, where they get stuck, 
                 and what makes an experience feel effortless.
-              </p>
-               <p className="text-white/60 text-[13px] md:text-[20px] leading-[1.8]">
                 That curiosity led me to UX/UI and eventually Product Design.
               </p>
               <p className="text-white/60 text-[13px] md:text-[20px] leading-[1.8]">
@@ -31,13 +29,6 @@ export default function About() {
                 products at Master’s Union, each project has taught me something 
                 different about solving problems, making trade-offs, 
                 and turning ideas into experiences people can actually use.
-              </p>
-              <p className="text-white/60 text-[13px] md:text-[20px] leading-[1.8]">
-                Most recently, I worked on Interview AI and Sales Coach AI, 
-                exploring how AI can make interview preparation and sales 
-                training more effective. A big part of that work was figuring 
-                out how to turn large amounts of AI-generated information into clear,
-                useful experiences without overwhelming people.
               </p>
               <p className="text-white/60 text-[13px] md:text-[20px] leading-[1.8]">
                 Beyond design, I'm someone who loves exploring creativity in
