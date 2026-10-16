@@ -42,40 +42,45 @@ export default function About() {
               </p>
             </div>
 
-            {/* Right: Three Portraits + Career Timeline */}
-            <div className="flex w-full flex-col gap-5 md:gap-6">
+            {/* Right: Floating Collage + Career Timeline */}
+            <div className="flex flex-col gap-5 md:gap-6">
 
-              {/* Three portraits */}
-              <div className="grid grid-cols-3 items-start gap-3 md:gap-4">
-                <div className="group aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-[#111311]">
+              {/* Floating collage — original animations preserved */}
+              <div className="relative h-[240px] md:h-[410px]">
+
+                {/* Workspace — top left */}
+                <div className="absolute top-0 left-0 w-[60%] h-[54%] animate-floatY hover:scale-105 transition-transform duration-300 z-10">
                   <img
                     src="/about-first.png"
-                    alt="Creative journey"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    alt="Workspace"
+                    className="w-full h-full object-cover rounded-xl"
                     loading="lazy"
                     decoding="async"
                   />
                 </div>
 
-                <div className="group aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-[#111311]">
+                {/* Portrait — top right */}
+                <div className="absolute top-0 right-0 w-[35%] h-[76%] animate-floatY2 hover:scale-105 transition-transform duration-300 z-20">
                   <img
                     src="/about-second.png"
-                    alt="Portrait of Sachin"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    alt="Portrait"
+                    className="w-full h-full object-cover rounded-xl"
                     loading="lazy"
                     decoding="async"
                   />
                 </div>
 
-                <div className="group aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-[#111311]">
+                {/* Detail — bottom left */}
+                <div className="absolute bottom-0 left-[25%] w-[35%] h-[43%] animate-floatY3 hover:scale-105 transition-transform duration-300 z-10">
                   <img
                     src="/about-third.png"
-                    alt="Design and creativity"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    alt="Detail"
+                    className="w-full h-full object-cover rounded-xl"
                     loading="lazy"
                     decoding="async"
                   />
                 </div>
+
               </div>
 
               {/* Career Timeline */}
@@ -129,13 +134,3 @@ export default function About() {
 
             </div>
             {/* End right column */}
-
-          </div>
-          {/* End grid */}
-        </div>
-        {/* End card */}
-      </div>
-      {/* End container */}
-    </section>
-  );
-}
