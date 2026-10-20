@@ -6,7 +6,7 @@ export default function Hero() {
 
         {/* ── Left copy ── */}
 <div className="reveal order-2 md:order-1 max-w-[650px]">
-  <p className="text-white/90 text-[14px] md:text-[18px] mb-5 md:mb-7">
+  <p className="text-white/80 text-[14px] md:text-[18px] mb-2 md:mb-3">
     नमस्ते! <span className="font-accent italic">Hello! Bonjour!</span>
   </p>
 
