@@ -4,52 +4,37 @@ export default function Hero() {
       <div className="max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:min-h-[650px] py-8 md:py-16">
 
-         {/* ── Left copy ── */}
+        {/* ── Left copy ── */}
 <div className="reveal order-2 md:order-1 max-w-[650px]">
-
-  {/* Greeting */}
-  <p className="text-white/90 text-[18px] md:text-[28px] mb-5 md:mb-7">
-    नमस्ते! <span className="font-accent italic">Hello!</span>{" "}
-    <span className="font-accent italic">Bonjour!</span>
+  <p className="text-white/90 text-[14px] md:text-[18px] mb-5 md:mb-7">
+    नमस्ते! <span className="font-accent italic">Hello! Bonjour!</span>
   </p>
 
-  {/* Name */}
-  <h1 className="font-heading font-bold text-[38px] md:text-[64px] leading-[1.05] tracking-tight text-white mb-3 md:mb-4 animate-revealUp opacity-0">
+  <h1 className="font-heading font-bold text-[32px] md:text-[54px] leading-tight tracking-tight text-white mb-2 animate-revealUp opacity-0">
     I am Sachin,
   </h1>
 
-  {/* Role + existing badge */}
-  <div className="flex items-start gap-3 mb-5 md:mb-6 flex-wrap relative">
-    <span className="font-accent italic text-accent text-[32px] md:text-[68px] leading-none font-bold">
+  <div className="flex items-start gap-3 mb-4 flex-wrap relative">
+    <span className="font-accent italic text-accent text-[34px] md:text-[68px] leading-none font-bold">
       Product Designer
     </span>
 
-    <span className="inline-block right-0 top-[-10px] absolute px-3 py-1 text-[11px] md:text-[18px] font-medium text-white/70 bg-black/40 border border-white/12 rounded-[12px] md:rounded-[18px] whitespace-nowrap rotate-badge animate-badgePop opacity-0">
+    <span className="absolute right-0 top-[-10px] px-3 py-1 text-[11px] md:text-[18px] font-medium text-white/70 bg-black/40 border border-white/12 rounded-[12px] md:rounded-[18px] whitespace-nowrap rotate-badge animate-badgePop opacity-0">
       AI & SaaS
     </span>
   </div>
 
-  {/* Design background */}
-  <p className="reveal reveal-d1 text-white/70 text-[14px] md:text-[20px] leading-relaxed max-w-[650px] mb-3">
-    Mid-level Designer with a Graphic & Visual Design background.
+  <p className="text-white/70 text-[14px] md:text-[20px] leading-relaxed mb-2">
+    Mid Level Designer with Graphics and Visual Design Background.
   </p>
 
-  {/* Personal introduction */}
-  <p className="reveal reveal-d2 text-white/70 text-[14px] md:text-[20px] leading-relaxed max-w-[650px] mb-4 md:mb-5">
-    I create thoughtful digital experiences across AI, SaaS, e-commerce,
-    and enterprise products, turning complex problems into intuitive
-    experiences people love to use.
-  </p>
-
-  {/* Day / Night statement */}
-  <p className="reveal reveal-d3 text-white/80 text-[15px] md:text-[21px] leading-relaxed max-w-[650px]">
+  <p className="text-white/70 text-[14px] md:text-[20px] leading-relaxed">
     Driving growth at{" "}
-    <span className="inline-flex items-center align-middle mx-1 px-3 py-1.5 rounded-full bg-black text-white text-[12px] md:text-[15px] font-semibold whitespace-nowrap">
-      Master’s Union
+    <span className="inline-flex items-center rounded-full bg-black px-3 py-1 text-white text-[10px] md:text-[12px] font-semibold whitespace-nowrap">
+      master’s union
     </span>{" "}
-    by day, exploring AI and building smarter experiences by night.
+    by day, Learning AI by Night
   </p>
-
 </div>
 
           {/* ── Right portrait ── */}
