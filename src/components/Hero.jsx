@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:min-h-[650px] py-8 md:py-16">
 
         {/* ── Left copy ── */}
-<div className="reveal order-2 md:order-1 max-w-[650px]">
+<div className="reveal order-2 md:order-1 max-w-[700px]">
   <p className="text-white/80 text-[14px] md:text-[18px] mb-2 md:mb-3">
     नमस्ते! <span className="font-accent italic">Hello! Bonjour!</span>
   </p>
