@@ -26,15 +26,9 @@ export default function Hero() {
 
   <p className="text-white/70 text-[14px] md:text-[20px] leading-relaxed mb-2">
     Mid Level Designer with Graphics and Visual Design Background.
+    Driving growth at Masters' Union by day, learning AI by night
   </p>
-
-  <p className="text-white/70 text-[14px] md:text-[20px] leading-relaxed">
-    Driving growth at{" "}
-    <span className="inline-flex items-center rounded-full bg-black px-3 py-1 text-white text-[10px] md:text-[12px] font-semibold whitespace-nowrap">
-      master’s union
-    </span>{" "}
-    by day, Learning AI by Night
-  </p>
+  
 </div>
 
           {/* ── Right portrait ── */}
