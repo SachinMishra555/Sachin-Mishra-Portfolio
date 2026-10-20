@@ -25,9 +25,17 @@ export default function Hero() {
   </div>
 
   <p className="text-white/70 text-[14px] md:text-[20px] leading-relaxed mb-2">
-    Mid Level Designer with Graphics and Visual Design Background.
-    Driving growth at Masters' Union by day, learning AI by night
-  </p>
+  Mid Level Designer with Graphics and Visual Design Background.
+  Driving growth at{" "}
+  <span className="inline-flex align-middle mx-1 h-[28px] md:h-[38px] w-[110px] md:w-[140px] rounded-full bg-black px-2 overflow-hidden">
+    <img
+      src="/mu-logo.gif"
+      alt="Master’s Union"
+      className="w-full h-full object-contain"
+    />
+  </span>{" "}
+  by day, learning AI by night
+</p>
   
 </div>
 
