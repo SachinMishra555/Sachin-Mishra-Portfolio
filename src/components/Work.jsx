@@ -111,7 +111,7 @@ function ProjectCard({ project }) {
   href={project.figmaLink}
   target="_blank"
   rel="noreferrer"
-  className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-[11px] bg-accent text-[#1A1C1E] text-[18px] font-medium underline underline-offset-2 hover:bg-accent-hover hover:-translate-y-0.5 transition-all duration-200"
+  className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-[11px] bg-accent text-[#1A1C1E] text-[18px] font-medium no-underline hover:bg-accent-hover hover:-translate-y-0.5 transition-all duration-200"
 >
   {project.id === 'salescoach' ? 'View Case Study' : 'Explore in Figma'}
   <ArrowRight size={15} strokeWidth={2.2} />
